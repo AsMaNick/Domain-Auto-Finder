@@ -2,10 +2,10 @@
 The program DAFi is a useful tool for the analysis of single-crystal X-ray diffraction data from polycrystalline samples, as its algorithm finds subsets of reflections in the reciprocal space belonging to the distinct crystallites.
 
 ## License and Citation
-This repository can be used only for personal/research/non-commercial purposes. For commercial requests, please contact us directly at matvej909@gmail.com or aslandukov.andrii@uni-bayreuth.de. Please cite the following paper if you use this repository:
+This repository can be used only for personal/research/non-commercial purposes. For commercial requests, please contact us directly at matvej909@gmail.com or andrii.aslandukov@uni-bayreuth.de. Please cite the following paper if you use this repository:
 
 ```
-A Aslandukov, M Aslandukov, L Dubrovinsky, N Dubrovinskaia, 
+A. Aslandukov, M. Aslandukov, L. Dubrovinsky, N. Dubrovinskaia, 
 "Domain Auto Finder (DAFi) program: the analysis of single-crystal X-ray diffraction data from polycrystalline samples", 
 J. Appl. Crystallogr., 2022, submitted
 ```
