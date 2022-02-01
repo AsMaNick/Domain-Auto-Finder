@@ -12,8 +12,8 @@ J. Appl. Crystallogr., 2022, submitted
 
 ## Installation
 1. Download and unzip the latest release from the [releases page](https://github.com/AsMaNick/Domain-Auto-Finder/releases).
-2. Unzipped data should consist of 3 files: executable file (`main.exe`), configuration file (`config.txt`) and example input data (`example.tabbin`).
-3. Validate your installation by executing the `main.exe` file: it should process the example data file (the whole execution can take several minutes). Although this program might also work on other Windows variants, we have only tested it on Windows 10 64-bit (x64).
+2. Unzipped data should consist of 4 files: an executable file (`main.exe`), a configuration file (`config.txt`), and two examples of input data described in chapter 3 of the paper (`example1_BasaltRock.tabbin`, `example2_Y5N14.tabbin`).
+3. Validate your installation by executing the `main.exe` file: it should process the example data file (the whole execution can take about 20 seconds). Although this program might also work on other Windows variants, we have only tested it on Windows 10 64-bit (x64).
 
 ## Process your own dataset
 1. Prepare `.tabbin` file from your experiment using CrysAlis<sup>Pro</sup> software.
@@ -44,5 +44,5 @@ J. Appl. Crystallogr., 2022, submitted
 
 ### Optional parameters
 - `exec_command_after_completing_tabbin` - string; executes external command after finishing job with a `.tabbin` file: "command path_to_tabbin_file group_id1 group_id2 ... group_idn"; can be used for calling external programs for further processing; empty for no execution; 
-- `extend_manually_found_lines` - integer; Leoind's mode: if you want to extend manually found rows, specify group id in which corresponding rows are present; 0 for search from scratch.
+- `extend_manually_found_lines` - integer; if you want to extend manually found rows, specify group id in which corresponding rows are present; 0 for search from scratch.
 - `random_angle_seed` - integer; random seed for rotation of all points by random angle; 0 for no rotation.
