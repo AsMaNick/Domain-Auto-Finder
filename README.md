@@ -33,9 +33,9 @@ J. Appl. Crystallogr., 2022, submitted
 - `extend_best_group_with_small_lines` - boolean; if true, decreases `minimum_line_size` parameter by one but only for the best found direction.
 
 ### First stage of the algorithm
-- `common_directions_method` - string, one of the three options: "naive", "smart.naive" or "smart.smart"; "naive" corresponds to the naive approach described in the section 2.3.1, "smart.\*" corresponds to the smart approach described in the section 3.2.
-- `eps_coordinates1` - real from 0.0001 to 0.02; used only by "smart.\*" methods in the internal phase of clusterizing the direction vectors; corresponds to the ε<sub>1</sub> defined in the section 2.3.1.
-- renormalization_period - integer; corresponds to the second speed optimization in the section 2.5; number of iterations after which points' renormalization and recalculation of direction distribution is necessary; for the `common_directions_method = naive` recommended value is 1000 while for the smart methods, which don't allow precise distribution recalculation, recommended value is in range from 5 to 20.
+- `common_directions_method` - string, one of the two options: "naive" or "smart"; "naive" corresponds to the naive approach described in the section 2.3.1, "smart" corresponds to the smart approach described in the section 2.3.2.
+- `eps_coordinates1` - real from 0.0001 to 0.02; used only by "smart" method in the internal phase of clusterizing the direction vectors; corresponds to the ε<sub>1</sub> defined in the section 2.3.1.
+- renormalization_period - integer; corresponds to the second speed optimization in the section 2.5; number of iterations after which points' renormalization and recalculation of direction distribution is necessary; for the `common_directions_method = naive` recommended value is 1000 while for the smart method, which don't allow precise distribution recalculation, recommended value is in range from 5 to 20.
 
 ### Second stage of the algorithm
 - `directions_to_consider` - integer; corresponds to the N<sub>dirs</sub> defined in the section 2.3; number of best directions to process during the second stage of the algorithm.
