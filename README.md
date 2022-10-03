@@ -6,7 +6,7 @@ This repository can be used only for personal/research/non-commercial purposes. 
 
 ```
 Aslandukov, A., Aslandukov, M., Dubrovinskaia, N. & Dubrovinsky, L. (2022). 
-J. Appl. Cryst. 55, https://doi.org/10.1107/S1600576722008081
+J. Appl. Cryst. 55, 1383-1391, https://doi.org/10.1107/S1600576722008081
 ```
 
 ## Installation
