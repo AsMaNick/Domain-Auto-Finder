@@ -33,13 +33,13 @@ J. Appl. Cryst. 55, 1383-1391, https://doi.org/10.1107/S1600576722008081
 
 ### First stage of the algorithm
 - `common_directions_method` - string, one of the two options: "naive" or "smart"; "naive" corresponds to the naive approach described in the section 2.3.1, "smart" corresponds to the smart approach described in the section 2.3.2.
-- `eps_coordinates1` - real from 0.0001 to 0.02; used only by "smart" method in the internal phase of clusterizing the direction vectors; corresponds to the ε<sub>1</sub> defined in the section 2.3.1.
+- `eps_coordinates1` - real from 0.0001 to 0.02; used only by "smart" method in the internal phase of clusterizing the direction vectors; corresponds to the $\varepsilon_1$ defined in the section 2.3.1.
 - renormalization_period - integer; corresponds to the second speed optimization in the section 2.5; number of iterations after which points' renormalization and recalculation of direction distribution is necessary; for the `common_directions_method = naive` recommended value is 1000 while for the smart method, which doesn't allow precise distribution recalculation, recommended value is in range from 5 to 20.
 
 ### Second stage of the algorithm
-- `directions_to_consider` - integer; corresponds to the N<sub>dirs</sub> defined in the section 2.3; number of best directions to process during the second stage of the algorithm.
+- `directions_to_consider` - integer; corresponds to the $N_{dirs}$ defined in the section 2.3; number of best directions to process during the second stage of the algorithm.
 - `eps_coordinates2` - real from 0.0001 to 0.02, recommended value = 0.002; epsilon for comparing points projections.
-- `eps_length` - real from 0.0001 to 0.2, recommended value = 0.02; corresponds to the ε<sub>2</sub> defined in the sections 2.3.2 and 2.4; epsilon for comparing distances between points on one line.
+- `eps_length` - real from 0.0001 to 0.2, recommended value = 0.02; corresponds to the $\varepsilon_2$ defined in the sections 2.3.2 and 2.4; epsilon for comparing distances between points on one line.
 
 ### Optional parameters
 - `pause_at_the_end` (supported from v2.1.5) - boolean; if true, waits until the user presses any key before terminating the program; true by default. 
