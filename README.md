@@ -42,7 +42,8 @@ J. Appl. Cryst. 55, 1383-1391, https://doi.org/10.1107/S1600576722008081
 - `eps_length` - real from 0.0001 to 0.2, recommended value = 0.02; corresponds to the ε<sub>2</sub> defined in the sections 2.3.2 and 2.4; epsilon for comparing distances between points on one line.
 
 ### Optional parameters
-- `exec_command_after_completing_tabbin` - string; executes external command after finishing job with a `.tabbin` file: "command path_to_tabbin_file group_id1 group_id2 ... group_idn"; can be used for calling external programs for further processing; empty for no execution; 
-- `extend_manually_found_lines` - integer; if you want to extend manually found rows, specify group id in which corresponding rows are present; 0 for search from scratch.
-- `random_angle_seed` - integer; random seed for rotation of all points by random angle; 0 for no rotation.
-- `data_format` (supported from v2.2.1) - string, one of the two options: "crysalis" or "id11_3dxrd". By default data format is guessed based on the extension of the `filename`: `.tabbin` corresponds to the "crysalis" data format, and `.vecs` - to the "id11_3dxrd".
+- `pause_at_the_end` (supported from v2.1.5) - boolean; if true, waits until the user presses any key before terminating the program; true by default. 
+- `exec_command_after_completing_tabbin` - string; executes external command after finishing job with a `.tabbin` file: "command path_to_tabbin_file group_id1 group_id2 ... group_idn"; can be used for calling external programs for further processing; empty for no execution; empty by default.
+- `extend_manually_found_lines` - integer; if you want to extend manually found rows, specify group id in which corresponding rows are present; 0 for search from scratch; 0 by default.
+- `random_angle_seed` - integer; random seed for rotation of all points by random angle; 0 for no rotation; 0 by default.
+- `data_format` (supported from v2.2.1) - string, one of the two options: "crysalis" or "id11_3dxrd"; by default data format is guessed based on the extension of the `filename`: `.tabbin` corresponds to the "crysalis" data format, and `.vecs` - to the "id11_3dxrd".
