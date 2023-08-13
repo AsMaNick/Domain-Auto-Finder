@@ -2,7 +2,7 @@
 The program DAFi is a useful tool for the analysis of single-crystal X-ray diffraction data from polycrystalline samples, as its algorithm finds subsets of reflections in the reciprocal space belonging to the distinct crystallites.
 
 ## License and Citation
-This repository can be used only for personal/research/non-commercial purposes. For commercial requests, please contact us directly at matvej909@gmail.com or andrii.aslandukov@uni-bayreuth.de. Please cite the following paper if you use this repository:
+This repository can be used only for personal/research/non-commercial purposes. For commercial requests, please contact us directly at matvii.aslandukov@gmail.com or andrii.aslandukov@uni-bayreuth.de. Please cite the following paper if you use this repository:
 
 ```
 Aslandukov, A., Aslandukov, M., Dubrovinskaia, N. & Dubrovinsky, L. (2022). 
@@ -23,7 +23,7 @@ J. Appl. Cryst. 55, 1383-1391, https://doi.org/10.1107/S1600576722008081
 ## Setupping the configuration file
 ### General parameters
 - `input_data_directory` - string; a path to the directory where `.tabbin` file is located.
-- `filename` - string; name of the `.tabbin` file to be processed.
+- `filename` - string; name of the input file to be processed.
 - `groups_per_tabbin` - integer; maximum number of groups that can be displayed in one `.tabbin` file.
 - `number_of_threads` - integer; number of threads to use; corresponds to the first speed optimization in the section 2.5; recommended to set equal to the number of processor cores.
 - `groups_to_find` - integer; total number of groups to find.
@@ -46,4 +46,4 @@ J. Appl. Cryst. 55, 1383-1391, https://doi.org/10.1107/S1600576722008081
 - `exec_command_after_completing_tabbin` - string; executes external command after finishing job with a `.tabbin` file: "command path_to_tabbin_file group_id1 group_id2 ... group_idn"; can be used for calling external programs for further processing; empty for no execution; empty by default.
 - `extend_manually_found_lines` - integer; if you want to extend manually found rows, specify group id in which corresponding rows are present; 0 for search from scratch; 0 by default.
 - `random_angle_seed` - integer; random seed for rotation of all points by random angle; 0 for no rotation; 0 by default.
-- `data_format` (supported from v2.2.1) - string, one of the two options: "crysalis" or "id11_3dxrd"; by default data format is guessed based on the extension of the `filename`: `.tabbin` corresponds to the "crysalis" data format, and `.vecs` - to the "id11_3dxrd".
+- `data_format` (supported from v2.2.1) - string, one of the three options: "CrysAlisPro", "APEX4" or "Text"; by default data format is guessed based on the extension of the `filename`: `.tabbin` corresponds to the "CrysAlisPro" data format, `.p4p` - to the "APEX4" and `.txt` - to the "Text".
