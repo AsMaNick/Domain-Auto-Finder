@@ -2,12 +2,14 @@
 The program DAFi is a useful tool for the analysis of single-crystal X-ray diffraction data from polycrystalline samples, as its algorithm finds subsets of reflections in the reciprocal space belonging to the distinct crystallites.
 
 ## License and Citation
-This repository can be used only for personal/research/non-commercial purposes. For commercial requests, please contact us directly at matvii.aslandukov@gmail.com or andrii.aslandukov@uni-bayreuth.de. Please cite the following paper if you use this repository:
+This repository can be used only for personal/research/non-commercial* purposes. For commercial usage, please contact us directly at matvii.aslandukov@gmail.com or andrii.aslandukov@uni-bayreuth.de. Please cite the following paper if you use this repository:
 
 ```
 Aslandukov, A., Aslandukov, M., Dubrovinskaia, N. & Dubrovinsky, L. (2022). 
 J. Appl. Cryst. 55, 1383-1391, https://doi.org/10.1107/S1600576722008081
 ```
+
+*In the context of CrysAlis<sup>Pro</sup> software, DAFi can be used freely for commercial applications as well.
 
 ## Installation
 1. Download and unzip the latest release from the [releases page](https://github.com/AsMaNick/Domain-Auto-Finder/releases).
